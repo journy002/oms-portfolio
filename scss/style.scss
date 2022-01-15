@@ -75,23 +75,91 @@ section {
     flex-direction: column;
     background: url('../static/images/profil-pattern.gif') ;
 
-    .box {
+    .about__list {
         display: flex;
         justify-content: center;
-        margin: 2.2em 0;
+        margin: 6.2em 0 2.2em 0;
         width: 100%;
         li {
+            position: relative;
             width: calc(100% / 3);
             text-align: center;
             p{
-                margin: 0.4em 0;
+                margin-bottom: 0.6em;
             }
         }
     }
 
-    // .box.first {
-    //     :nth-child(2) {
-    //         margin: 0 3em;
-    //     }
-    // }
+    .about__list.first {
+        :first-child {
+            .list__name::before{
+                position: absolute;
+                bottom: 50px;
+                left: calc(33% / 50%);
+                display: inline-block;
+                content: '';
+                width: 56px;
+                height: 56px;
+                background: url('../static/images/profil-ico.png');
+                transform: translateX(-5px);
+            }
+        }
+
+        :nth-child(2) {
+            .list__name::before{
+                position: absolute;
+                bottom: 50px;
+                left: calc(33% / 50%);
+                display: inline-block;
+                content: '';
+                width: 56px;
+                height: 56px;
+                background: url('../static/images/profil-ico.png') 0 25%;
+                transform: translateX(-2px);
+            }
+        }
+
+        :nth-child(3) {
+            .list__name::before{
+                position: absolute;
+                bottom: 50px;
+                left: calc(33% / 50%);
+                display: inline-block;
+                content: '';
+                width: 56px;
+                height: 56px;
+                background: url('../static/images/profil-ico.png') 0 75%;
+            }
+        }
+    }
+
+    .about__list.second {
+        :first-child {
+            .list__name::before{
+                position: absolute;
+                bottom: 50px;
+                left: calc(33% / 50%);
+                display: inline-block;
+                content: '';
+                width: 56px;
+                height: 56px;
+                background: url('../static/images/profil-ico.png');
+                transform: translateX(8px);
+            }
+        }
+
+        :last-child {
+            .list__name::before{
+                position: absolute;
+                bottom: 50px;
+                left: calc(33% / 50%);
+                display: inline-block;
+                content: '';
+                width: 56px;
+                height: 56px;
+                background: url('../static/images/profil-ico.png') 0 100%;
+                transform: translateX(17px);
+            }
+        }
+    }
 }
