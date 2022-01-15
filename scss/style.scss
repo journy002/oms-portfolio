@@ -1,0 +1,22 @@
+$color-black: #000;
+$color-white: #fff;
+$color-darkBlue: #20293d;
+$color-deepDarkBlue: #131720;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 1em;
+    background: linear-gradient(to bottom left, $color-darkBlue, $color-deepDarkBlue);
+    .logo {
+        width: 6em;
+    }
+    .list {
+        display: flex;
+        color: $color-white;
+        .item {
+            margin-left: 0.5em;
+        }
+    }
+}
