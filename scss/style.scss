@@ -11,6 +11,7 @@ $font--large-size: 28px;
 
 section {
     padding: 3em 2em;
+    height: 500px;
 }
 
 .section__title {
@@ -163,3 +164,8 @@ section {
         }
     }
 }
+
+.skills {background-color: goldenrod;}
+.source {background-color: green;}
+.work {background-color: grey;}
+.contact {background-color: gainsboro;}
