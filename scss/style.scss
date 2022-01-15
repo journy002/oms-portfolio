@@ -1,22 +1,97 @@
-$color-black: #000;
-$color-white: #fff;
-$color-darkBlue: #20293d;
-$color-deepDarkBlue: #131720;
+$color--black: #000;
+$color--white: #fff;
+$color--darkBlue: #20293d;
+$color--deepDarkBlue: #131720;
 
-.header {
+$font--large-size: 28px;
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 3em 2em;
+}
+
+.section__title {
+    font-size: $font--large-size;
+}
+
+.home {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 1em;
-    background: linear-gradient(to bottom left, $color-darkBlue, $color-deepDarkBlue);
-    .logo {
-        width: 6em;
-    }
-    .list {
+    flex-direction: column;
+    
+    background: linear-gradient(to bottom left, $color--darkBlue, $color--deepDarkBlue);
+
+    .navbar{
         display: flex;
-        color: $color-white;
-        .item {
-            margin-left: 0.5em;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .logo {
+            width: 6em;
+        }
+
+        .list {
+            display: flex;
+            color: $color--white;
+            .item {
+                margin-left: 1em;
+                cursor: pointer;
+            }
         }
     }
+
+    .home__container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5em;
+        width: 100%;
+        color: $color--white;
+
+        div {
+            display: inline-block;
+            width: 22em;
+            height: 20em;
+        }
+
+        .home__description {
+            background-color: yellow;
+        }
+
+        .home__avatar {
+            background-color: green;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../static/images/profil-pattern.gif') ;
+
+    .box {
+        display: flex;
+        justify-content: center;
+        margin: 2.2em 0;
+        width: 100%;
+        li {
+            width: calc(100% / 3);
+            text-align: center;
+            p{
+                margin: 0.4em 0;
+            }
+        }
+    }
+
+    // .box.first {
+    //     :nth-child(2) {
+    //         margin: 0 3em;
+    //     }
+    // }
 }
