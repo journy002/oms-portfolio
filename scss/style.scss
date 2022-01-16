@@ -1,9 +1,13 @@
+@import 'fonts.scss';
+
 $color--black: #000;
 $color--white: #fff;
 $color--darkBlue: #20293d;
 $color--deepDarkBlue: #131720;
-
 $font--large-size: 28px;
+
+
+
 
 * {
     box-sizing: border-box;
@@ -31,7 +35,7 @@ section {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-
+        
         .logo {
             width: 6em;
         }
@@ -75,7 +79,7 @@ section {
     align-items: center;
     flex-direction: column;
     background: url('../static/images/profil-pattern.gif') ;
-
+    font-family: "SCDream";
     .about__list {
         display: flex;
         justify-content: center;
@@ -165,7 +169,10 @@ section {
     }
 }
 
-.skills {background-color: goldenrod;}
+.skills {
+    // background: url('../static/images/skills_bg.jpeg') 100%;
+}
+
 .source {background-color: green;}
 .work {background-color: grey;}
 .contact {background-color: gainsboro;}
