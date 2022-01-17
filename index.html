@@ -1,65 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Munseok portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="./src/scss/style.scss">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./src/scss/style.scss" />
+  </head>
+  <body>
     <section class="home">
-        <navbar class="navbar">
-            <div>
-                <img src="./images/profil_logo.png" alt="logo" class="logo">
-            </div>
-            <ul class="list">
-                <li class="item" data-type=".home">Home</li>
-                <li class="item" data-type=".about">About</li>
-                <li class="item" data-type=".skills">Skills</li>
-                <li class="item" data-type=".source">Source</li>
-                <li class="item" data-type=".work">Work</li>
-                <li class="item" data-type=".contact">Contact</li>
-            </ul>
-        </navbar>
-        <div class="home__container">
-            <div class="home__description">
-                22
-            </div>
-            <div class="home__avatar">22</div>
+      <navbar class="navbar">
+        <div>
+          <img src="./images/profil_logo.png" alt="logo" class="logo" />
         </div>
-    </section>
-    <section class="about">
-        <h2 class="section__title">ABOUT ME</h2>
-        <ul class="about__list first">
-            <li>
-                <p class="list__name">NAME</p>
-                <span>오문석 (Oh Mun Seok)</span>
-            </li>
-            <li>
-                <p class="list__name">E-MAIL</p>
-                <span>journy002@naver.com</span>
-            </li>
-            <li>
-                <p class="list__name">PHONE</p>
-                <span>010-4993-1251</span>
-            </li>
+        <ul class="list">
+          <li class="item" data-type=".home">Home</li>
+          <li class="item" data-type=".about">About</li>
+          <li class="item" data-type=".skills">Skills</li>
+          <li class="item" data-type=".source">Source</li>
+          <li class="item" data-type=".work">Work</li>
+          <li class="item" data-type=".contact">Contact</li>
         </ul>
-        <ul class="about__list second">
-            <li>
-                <p class="list__name">ADDRESS</p>
-                <span>경기도 의왕시 내손동</span>
-            </li>
-            <li>
-                <p class="list__name">EDUCATION</p>
-                <span>북경 어언 대학교(4년제)</span>
-            </li>
-        </ul>
+      </navbar>
+      <div class="home__container">
+        <div class="home__description">
+          <p>안녕하세요 :)<br />개발이 취미인</p>
+          <p class="bol__text">프론트엔드 개발자</p>
+          <p><strong class="bol__text">오문석</strong>입니다.</p>
+          <p class="short__desc">
+            솔루션&#183;SI회사 웹퍼블리셔 1년 경력을 쌓았습니다.<br />
+            프론트 개발자가 되기위해 바닐라 자바스크립트, Webpack, babel
+            공부와<br />
+            React, React-router 등 프론트 개발에 필요한 CS지식을 쌓고 있습니다.
+          </p>
+        </div>
+        <div class="home__avatar">
+          <div class="avatar__box">
+            <img
+              class="avartar"
+              src="./images/profile_avatar.jpg"
+              alt="avartar"
+            />
+          </div>
+          <div class="patterns"></div>
+          <div class="round"></div>
+        </div>
+      </div>
     </section>
-    <section class="skills"></section>
-    <section class="source"></section>
-    <section class="work"></section>
-    <section class="contact"></section>
-</body>
+    <section class="section about">
+      <h2 class="section__title">ABOUT ME</h2>
+      <ul class="about__list first">
+        <li>
+          <p class="list__name">NAME</p>
+          <span>오문석 (Oh Mun Seok)</span>
+        </li>
+        <li>
+          <p class="list__name">E-MAIL</p>
+          <span>journy002@naver.com</span>
+        </li>
+        <li>
+          <p class="list__name">PHONE</p>
+          <span>010-4993-1251</span>
+        </li>
+      </ul>
+      <ul class="about__list second">
+        <li>
+          <p class="list__name">ADDRESS</p>
+          <span>경기도 의왕시 내손동</span>
+        </li>
+        <li>
+          <p class="list__name">EDUCATION</p>
+          <span>북경 어언 대학교(4년제)</span>
+        </li>
+      </ul>
+    </section>
+    <section class="section skills">
+      <h2 class="section__title">SKILLS</h2>
+      <div>
+        <p class="skill__description">
+          다양한 프로젝트를 통하여 HTML5, CSS3, Javscript, React, Git 등 다양한
+          tool과 라이브러리 사용 경험을 쌓았습니다.<br />
+          더욱 발전된 프론트앤드 개발자가 되기 위해 코드의 확장성, 리팩토링에
+          신경쓰며 개발 공부를 하고 있습니다.
+        </p>
+        <img
+          class="skill__list"
+          src="./images/skills_list.png"
+          alt="skills_list"
+        />
+      </div>
+    </section>
+    <section class="section source"></section>
+    <section class="section work"></section>
+    <section class="section contact"></section>
+  </body>
 </html>
