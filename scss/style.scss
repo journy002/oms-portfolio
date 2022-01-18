@@ -146,7 +146,7 @@ section {
       .round {
         position: absolute;
         top: -52px;
-        right: -74px;
+        right: -45px;
         padding-top: 178px;
         width: 190px;
         background: url("../static/images/profile_round.png") no-repeat;
@@ -255,17 +255,61 @@ section {
   font-family: "SCDream";
   text-align: center;
 
-  .skill__description {
-    margin: 1.5em 0;
-    line-height: 2em;
+  .skill__container {
+    margin: 3em 0;
+
+    .skill__description {
+      margin-bottom: 1.5em;
+      line-height: 2em;
+    }
+
+    .skill__list {
+      width: 100%;
+    }
   }
 }
 
 .source {
-  background-color: green;
+  color: $color--white;
+  background-color: $color--deepDarkBlue;
+  .source__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
+
+    .source__img_box {
+      display: inline-block;
+      margin-right: 10em;
+    }
+
+    .source__description {
+      display: inline-block;
+      width: 100%;
+      line-height: 2em;
+      list-style: initial;
+    }
+  }
 }
 .work {
   background-color: grey;
+  .bx-wrapper {
+    width: 516px !important;
+    .bx-controls-direction a.bx-prev {
+      left: -45px;
+    }
+    .bx-controls-direction a.bx-next {
+      right: -45px;
+    }
+  }
+  .work__container {
+    display: flex;
+    margin: 3em 0;
+
+    .work__description {
+      margin-left: 10em;
+    }
+  }
 }
 .contact {
   background-color: gainsboro;

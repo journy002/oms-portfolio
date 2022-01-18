@@ -10,6 +10,12 @@
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
     <link rel="stylesheet" href="./src/scss/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </head>
   <body>
     <section class="home">
@@ -33,9 +39,11 @@
           <p><strong class="bol__text">오문석</strong>입니다.</p>
           <p class="short__desc">
             솔루션&#183;SI회사 웹퍼블리셔 1년 경력을 쌓았습니다.<br />
-            프론트 개발자가 되기위해 바닐라 자바스크립트, Webpack, babel
-            공부와<br />
-            React, React-router 등 프론트 개발에 필요한 CS지식을 쌓고 있습니다
+            프론트 개발자가 되기위해 바닐라 자바스크립트, React, Redux, Context
+            API를 공부하며 서비스 개발 및 상태 관리 경험을 쌓고 있습니다
+            <br />
+            또한, Webpack, Babel 등 프론트 개발에 필요한 지식을 꾸준히
+            쌓고있습니다.
           </p>
         </div>
         <div class="home__avatar">
@@ -80,7 +88,7 @@
     </section>
     <section class="section skills">
       <h2 class="section__title">SKILLS</h2>
-      <div>
+      <div class="skill__container">
         <p class="skill__description">
           다양한 프로젝트를 통하여 HTML5, CSS3, Javscript, React, Git 등 다양한
           tool과 라이브러리 사용 경험을 쌓았습니다.<br />
@@ -94,8 +102,48 @@
         />
       </div>
     </section>
-    <section class="section source"></section>
-    <section class="section work"></section>
+    <section class="section source">
+      <h2 class="section__title">SOURCE</h2>
+      <div class="source__container">
+        <a
+          class="source__img_box"
+          href="https://github.com/journy002"
+          target="_blank"
+        >
+          <img src="./images/profile_round.png" alt="gitImage" />
+        </a>
+        <ul class="source__description">
+          <li>
+            프론트개발에 관련된 지식을 공부하고 Git을 이용하여 공부한 기록들을
+            담고있습니다.
+          </li>
+          <li>
+            안주하지 않고 더 나은 프론트개발자가 되기 위해 노력하며 그 기록들을
+            담겠습니다.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section work">
+      <h2 class="section__title">WORK</h2>
+      <div class="work__container">
+        <div class="slider">
+          <div>I am a slide.</div>
+          <div>I am another slide.</div>
+        </div>
+        <ul class="work__description">
+          <li>asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</li>
+          <li>asdfasdf</li>
+          <li>asdfasdf</li>
+          <li>asdfasdf</li>
+        </ul>
+      </div>
+    </section>
     <section class="section contact"></section>
   </body>
+  <script>
+    $(document).ready(function () {
+      $(".slider").bxSlider();
+    });
+  </script>
 </html>
