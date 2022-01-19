@@ -34,6 +34,7 @@ section {
   border-bottom: 2px solid goldenrod;
   font-size: $font--large-size;
   text-align: center;
+  font-family: "SCDream";
 }
 
 .home {
@@ -159,7 +160,7 @@ section {
 
 .about {
   background: url("../static/images/profil-pattern.gif");
-  font-family: "SCDream";
+
   .about__list {
     display: flex;
     justify-content: center;
@@ -252,7 +253,6 @@ section {
 .skills {
   color: $color--white;
   background: url("../static/images/skills_bg.jpeg") 100%;
-  font-family: "SCDream";
   text-align: center;
 
   .skill__container {
