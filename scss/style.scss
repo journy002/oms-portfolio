@@ -136,8 +136,8 @@ section {
 
       .patterns {
         position: absolute;
-        top: -16px;
-        right: 14px;
+        top: -24px;
+        right: 22px;
         padding-top: 455px;
         width: 352px;
         background: url("../static/images/profile_home_pattern.png") no-repeat;
@@ -298,7 +298,8 @@ section {
 .work {
   background-color: grey;
   .bx-wrapper {
-    width: 516px !important;
+    margin-bottom: 3em !important;
+    width: 26em !important;
     .bx-controls-direction a.bx-prev {
       left: -45px;
     }
@@ -309,9 +310,14 @@ section {
   .work__container {
     display: flex;
     margin: 3em 0;
-
+    padding: 0 6em;
     .work__description {
-      margin-left: 10em;
+      display: inline-block;
+      margin-left: 8em;
+      width: 33em;
+      color: white;
+      line-height: 2em;
+      list-style: inherit;
     }
   }
 }
