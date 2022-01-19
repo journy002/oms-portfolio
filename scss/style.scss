@@ -276,11 +276,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3em 0;
+    margin: 3em 10em;
 
     .source__img_box {
       display: inline-block;
-      margin-right: 10em;
+      margin-right: 5em;
+
+      .source__img {
+        width: 100%;
+      }
     }
 
     .source__description {
